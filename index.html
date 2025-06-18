@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    background-color: red;
+  }
+  </style>
+</head>
+<body>
+<h1>Dogs</h1>
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+<picture>
+    <source srcset="images/small-dog.jpg" media="(max-width: 600px)">
+    <source srcset="images/landscape.jpg" media="(max-width: 1500px)">
+    <source srcset="images/funny-dog.jpg">
+    <img src="images/funny-dog.jpg" alt="Funny Dog" style="width:auto;">
+  </picture>  
+  
+</body>
+</html>
